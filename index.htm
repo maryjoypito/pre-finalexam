@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.grid-item {
+	background-color: FAEBD7;
+	padding: 20px;
+	font-size: 30px
+	text-align: center;
+
+} 
+.item1 {
+	grid-column: 1 / 7;
+	grid-row: 1;
+}
+.item2 {
+	grid-column: 1 ;
+	grid-row:  2 / span 14;
+}
+.item3 {
+	grid-column:  2 / span 4;
+	grid-row: 2 span 14 ;
+}
+.item4 {
+	grid-column: 6 ;
+	grid-row:2 / span 14;
+
+}
+.item5 {
+	grid-column: 1 / span 6;        
+	grid-row: 18 ;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+
+<div class="grid-container">
+  <div class="item1">WEB DEVELOPEMENT 2</div>
+  
+
+  <div class="item2">
+  	        <h2>Menu</h2>
+  	        <a href="home.htm">HOME</a><br>
+      <a href="about us.htm">ABOUT US</a><br>
+      <a href="contact.html">CONTACT</a>
+  </div>
+
+  <div class="item3">Main
+
+<img src="bcat.jpg" alt="Place holder image"  style="max-width: 100%;height:
+ auto;display: block;margin-bottom: 1rem;">
+
+
+  </div>
+
+
+
+  <div class="item4">Right
+           <h2>That Time I Got Reincarnated as a Slime</h2>
+           <p><strong>News title 1</strong><p>
+           <p>After dying while protecting his junior colleague at work from a knife attack, a salaryman named Satoru Mikami is reincarnated in a magical world, but due to his last thoughts and desires, he's ended up inhabiting the body of a slime. As someone who is reincarnated, he gains the Skills "Predator" and "Great Sage". </p>
+           
+           <p><strong>News title 1</strong><p>
+           <p>While strolling around, he meets the Storm Dragon Veldora who becomes his friend and names him Rimuru. In return, Rimuru gives the surname Tempest to both of them and agrees to consume the magical cage trapping Veldora, so that one day they can permanently break Veldora's imprisonment. The mysterious disappearance of the Storm Dragon results in huge consequences as his presence acted as a sort of buffer zone. Meanwhile, Rimuru starts his adventure by traveling, meeting new people, fighting some of them, and turning them into allies by fighting them. He is guided by a mysterious interface, the Great Sage, which teaches him how to use his unique skill, "Predator", an almost limitless ability to eat and assimilate living things and objects. </p>s
+             
+            
+
+  </div>
+
+
+  <div class="item5">
+    <p>&copy; 2024 WEBDEV2. All rights reserve.</p>
+ 
+</div>
+
+
+
+</body>
+</html>
